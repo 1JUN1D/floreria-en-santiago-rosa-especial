@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://rosareal.dondeseria.com/sitemap.xml

@@ -1,0 +1,2014 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+
+<!-- Google tag (gtag.js) - Google Ads conversion -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18163228199"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18163228199');
+</script>
+<!-- Event snippet for conversions -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') { window.location = url; }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-18163228199/iTZDCLCAzsocEKe889RD',
+        'value': 1.0,
+        'currency': 'CLP',
+        'event_callback': callback
+    });
+    return false;
+  }
+</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo floral completo en Santiago. Rosas, girasoles, gerberas, ramos, canastas, cajas florales, arreglos fúnebres y más. Despacho a domicilio.">
+    <meta name="keywords" content="floristeria santiago, catalogo flores, arreglos florales santiago, rosas, girasoles, gerberas, ramos, canastas florales, arreglos funebres, flores a domicilio santiago">
+    <title>Catálogo Floral Completo | Flores en Santiago</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Catálogo Floral Santiago">
+    <meta property="og:description" content="Explora nuestro catálogo completo de arreglos florales, ramos, canastas, cajas y más en Santiago. Despacho a domicilio.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rosareal.dondeseria.com/catalogo">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/catalog.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.webp">
+
+    <style>
+        .product-code {
+            display: inline-block;
+            background: linear-gradient(135deg, #40353E 0%, #8C748B 100%);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 0.25rem 0.6rem;
+            border-radius: 50px;
+            margin-bottom: 0.5rem;
+        }
+        .filter-btn .filter-code {
+            font-size: 0.7rem;
+            opacity: 0.7;
+            margin-right: 4px;
+            font-weight: 700;
+        }
+        /* Tarjetas de promoción destacadas */
+        .product-card.promo-card {
+            position: relative;
+            border: 3px solid #d32f2f;
+            box-shadow: 0 8px 28px rgba(211, 47, 47, 0.28), 0 0 0 4px rgba(255, 215, 0, 0.18);
+            transform: translateY(0);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: visible !important;
+        }
+        .product-card.promo-card::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: inherit;
+            padding: 3px;
+            background: linear-gradient(135deg, #ffd700 0%, #d32f2f 50%, #ffd700 100%);
+            background-size: 300% 300%;
+            animation: promoGlow 4s ease-in-out infinite;
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+            z-index: 1;
+        }
+        @keyframes promoGlow {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        .product-card.promo-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 14px 38px rgba(211, 47, 47, 0.38), 0 0 0 4px rgba(255, 215, 0, 0.28);
+        }
+        .promo-ribbon {
+            position: absolute;
+            top: 12px;
+            left: -8px;
+            background: linear-gradient(135deg, #d32f2f 0%, #ff1744 100%);
+            color: #fff;
+            padding: 0.4rem 1rem 0.4rem 1.2rem;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            box-shadow: 0 4px 12px rgba(211, 47, 47, 0.5);
+            z-index: 10;
+            clip-path: polygon(0 0, 100% 0, 92% 50%, 100% 100%, 0 100%, 8% 50%);
+        }
+        .promo-ribbon::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            border-top: 6px solid #8b0000;
+            border-left: 8px solid transparent;
+        }
+        .promo-spark {
+            color: #ffd700;
+            font-size: 0.7rem;
+        }
+        .promo-savings {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: linear-gradient(135deg, #ffd700 0%, #ff9800 100%);
+            color: #40353E;
+            font-weight: 900;
+            font-size: 0.95rem;
+            padding: 0.4rem 0.7rem;
+            border-radius: 50%;
+            min-width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(255, 152, 0, 0.5);
+            z-index: 10;
+            animation: savingsBounce 2.2s infinite;
+            border: 2px solid #fff;
+        }
+        @keyframes savingsBounce {
+            0%, 100% { transform: scale(1) rotate(-8deg); }
+            50% { transform: scale(1.1) rotate(8deg); }
+        }
+        .product-card.promo-card .product-price {
+            color: #d32f2f;
+            font-weight: 800;
+        }
+
+
+        /* ============================================================
+           CAMPAÑA PROMOCIÓN DE LA SEMANA — 1 de agosto
+           Animaciones sólo con transform/opacity (compuestas por GPU)
+           para no penalizar el rendimiento de la página.
+           ============================================================ */
+
+        /* --- Banner que encabeza los 7 destacados --- */
+        .semana-banner {
+            grid-column: 1 / -1;
+            position: relative;
+            overflow: hidden;
+            border-radius: 18px;
+            padding: 1.05rem 1.3rem;
+            background: linear-gradient(120deg, #6d0f37 0%, #ad1457 42%, #e91e63 68%, #8e0f45 100%);
+            color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.9rem;
+            box-shadow: 0 10px 30px rgba(173, 20, 87, 0.3);
+            border: 2px solid rgba(255, 215, 128, 0.55);
+            contain: paint;
+        }
+        .semana-banner::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transform: translate3d(-160%, 0, 0) skewX(-18deg);
+            animation: semanaSheen 5.5s ease-in-out infinite;
+            pointer-events: none;
+            will-change: transform;
+        }
+        @keyframes semanaSheen {
+            0%   { transform: translate3d(-160%, 0, 0) skewX(-18deg); }
+            55%, 100% { transform: translate3d(330%, 0, 0) skewX(-18deg); }
+        }
+        .semana-banner-text { position: relative; z-index: 2; min-width: 240px; }
+        .semana-banner-text h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.45rem;
+            line-height: 1.15;
+            margin: 0 0 0.25rem;
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
+        }
+        .semana-banner-text p {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.86rem;
+            opacity: 0.94;
+            letter-spacing: 0.2px;
+        }
+        .semana-banner .semana-gold { color: #ffd88a; }
+        .semana-crown {
+            display: inline-block;
+            margin-right: 6px;
+            animation: semanaTwinkle 2.4s ease-in-out infinite;
+        }
+        @keyframes semanaTwinkle {
+            0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+            50%      { transform: scale(1.25) rotate(12deg); opacity: 0.75; }
+        }
+
+        /* --- Contador regresivo --- */
+        .semana-countdown {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .semana-cd-unit {
+            background: rgba(255, 255, 255, 0.16);
+            border: 1px solid rgba(255, 216, 138, 0.6);
+            border-radius: 10px;
+            padding: 0.35rem 0.5rem;
+            min-width: 50px;
+            text-align: center;
+            backdrop-filter: blur(3px);
+        }
+        .semana-cd-num {
+            display: block;
+            font-size: 1.15rem;
+            font-weight: 800;
+            line-height: 1;
+            color: #fff;
+            font-variant-numeric: tabular-nums;
+        }
+        .semana-cd-lbl {
+            display: block;
+            font-size: 0.58rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-top: 2px;
+        }
+        .semana-cd-sep { font-weight: 800; opacity: 0.55; }
+
+        /* --- Tarjetas destacadas --- */
+        .product-card.semana-card,
+        .product-item.semana-card {
+            position: relative;
+            border: 3px solid transparent;
+            background-image: linear-gradient(#fff, #fff),
+                              linear-gradient(135deg, #d4af37 0%, #e91e63 35%, #ff80ab 60%, #d4af37 100%);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+            box-shadow: 0 10px 30px rgba(233, 30, 99, 0.22), 0 0 0 4px rgba(212, 175, 55, 0.16);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: visible !important;
+        }
+        .product-card.semana-card:hover,
+        .product-item.semana-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 18px 42px rgba(233, 30, 99, 0.34), 0 0 0 5px rgba(212, 175, 55, 0.26);
+        }
+
+        /* Cinta esquina superior izquierda */
+        .semana-ribbon {
+            position: absolute;
+            top: 14px;
+            left: -8px;
+            background: linear-gradient(135deg, #ad1457 0%, #e91e63 55%, #ff4081 100%);
+            color: #fff;
+            padding: 0.4rem 0.95rem 0.4rem 1.15rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 1.2px;
+            white-space: nowrap;
+            box-shadow: 0 4px 14px rgba(173, 20, 87, 0.55);
+            z-index: 10;
+            clip-path: polygon(0 0, 100% 0, 93% 50%, 100% 100%, 0 100%, 7% 50%);
+            animation: semanaRibbon 3s ease-in-out infinite;
+            will-change: transform;
+        }
+        @keyframes semanaRibbon {
+            0%, 100% { transform: scale(1); }
+            50%      { transform: scale(1.045); }
+        }
+        .semana-ribbon .semana-spark {
+            color: #ffd88a;
+            display: inline-block;
+            animation: semanaTwinkle 2.2s ease-in-out infinite;
+        }
+
+        /* Sello de descuento superior derecha */
+        .semana-savings {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            background: linear-gradient(140deg, #ffd88a 0%, #d4af37 55%, #b8860b 100%);
+            color: #5c0b2e;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            font-size: 0.95rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            border: 2px solid #fff;
+            box-shadow: 0 5px 16px rgba(184, 134, 11, 0.55);
+            z-index: 10;
+            animation: semanaSeal 2.6s ease-in-out infinite;
+            will-change: transform;
+        }
+        .semana-savings small {
+            font-size: 0.44rem;
+            letter-spacing: 0.6px;
+            font-weight: 700;
+            margin-top: 2px;
+            opacity: 0.85;
+        }
+        @keyframes semanaSeal {
+            0%, 100% { transform: scale(1) rotate(-7deg); }
+            50%      { transform: scale(1.1) rotate(7deg); }
+        }
+
+        .product-card.semana-card .product-price,
+        .product-item.semana-card .price,
+        .product-item.semana-card .price-block .promo-price {
+            color: #c2185b;
+            font-weight: 800;
+        }
+
+        /* Chip de filtro Promoción de la Semana */
+        .filter-btn.semana-filter {
+            background: linear-gradient(135deg, #ad1457 0%, #e91e63 100%) !important;
+            color: #fff !important;
+            border-color: #e91e63 !important;
+            font-weight: 700;
+        }
+        .filter-btn.semana-filter:hover,
+        .filter-btn.semana-filter.active {
+            background: linear-gradient(135deg, #6d0f37 0%, #c2185b 100%) !important;
+            color: #fff !important;
+        }
+
+        @media (max-width: 640px) {
+            .semana-banner { padding: 0.9rem 1rem; justify-content: center; text-align: center; }
+            .semana-banner-text { min-width: 0; }
+            .semana-banner-text h2 { font-size: 1.15rem; }
+            .semana-banner-text p { font-size: 0.78rem; }
+            .semana-cd-unit { min-width: 44px; padding: 0.3rem 0.4rem; }
+            .semana-cd-num { font-size: 1rem; }
+            .semana-savings { width: 46px; height: 46px; font-size: 0.82rem; }
+            .semana-ribbon { font-size: 0.62rem; padding: 0.35rem 0.75rem 0.35rem 0.95rem; }
+        }
+
+        /* Respeta la preferencia de menos movimiento del sistema */
+        @media (prefers-reduced-motion: reduce) {
+            .semana-banner::after,
+            .semana-crown,
+            .semana-ribbon,
+            .semana-ribbon .semana-spark,
+            .semana-savings { animation: none !important; }
+        }
+
+        /* --- Tarjeta personalizada: Peluches --- */
+        .product-card.peluche-card,
+        .product-item.peluche-card {
+            position: relative;
+            border: 3px solid transparent;
+            background-image: linear-gradient(#fff, #fff),
+                              linear-gradient(135deg, #f8bbd0 0%, #ce93d8 45%, #b39ddb 100%);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+            box-shadow: 0 10px 28px rgba(186, 104, 200, 0.20);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: visible !important;
+        }
+        .product-card.peluche-card:hover,
+        .product-item.peluche-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 18px 40px rgba(186, 104, 200, 0.34);
+        }
+        .peluche-ribbon {
+            position: absolute;
+            top: 14px;
+            left: -8px;
+            background: linear-gradient(135deg, #6a1b9a 0%, #8e24aa 55%, #ba68c8 100%);
+            color: #fff;
+            padding: 0.4rem 0.95rem 0.4rem 1.15rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 1.2px;
+            white-space: nowrap;
+            box-shadow: 0 4px 14px rgba(106, 27, 154, 0.45);
+            z-index: 10;
+            clip-path: polygon(0 0, 100% 0, 93% 50%, 100% 100%, 0 100%, 7% 50%);
+        }
+        .peluche-note {
+            display: block;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.66rem;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            color: #8e24aa;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+        .peluche-quote {
+            display: inline-block;
+            background: linear-gradient(135deg, #f3e5f5 0%, #fce4ec 100%);
+            color: #6a1b9a;
+            border: 1px dashed #ba68c8;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 0.95rem;
+            padding: 0.3rem 0.85rem;
+            border-radius: 50px;
+        }
+        .filter-btn.peluche-filter {
+            background: linear-gradient(135deg, #8e24aa 0%, #ba68c8 100%) !important;
+            color: #fff !important;
+            border-color: #ba68c8 !important;
+            font-weight: 700;
+        }
+        .filter-btn.peluche-filter:hover,
+        .filter-btn.peluche-filter.active {
+            background: linear-gradient(135deg, #6a1b9a 0%, #9c27b0 100%) !important;
+            color: #fff !important;
+        }
+
+        /* Carousel para productos con variaciones */
+        .product-image-container.has-carousel {
+            position: relative;
+        }
+        .product-image-container.has-carousel .carousel-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.7s ease-in-out;
+            z-index: 1;
+        }
+        .product-image-container.has-carousel .carousel-img.active {
+            opacity: 1;
+            z-index: 2;
+        }
+        .carousel-dots {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            z-index: 5;
+        }
+        .carousel-dot {
+            width: 9px;
+            height: 9px;
+            background: rgba(255, 255, 255, 0.6);
+            border: 1.5px solid rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background 0.25s ease, transform 0.25s ease;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        }
+        .carousel-dot.active {
+            background: #fff;
+            transform: scale(1.25);
+        }
+        .carousel-counter {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.55);
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.2rem 0.55rem;
+            border-radius: 50px;
+            letter-spacing: 0.5px;
+            z-index: 5;
+            backdrop-filter: blur(4px);
+        }
+        .original-price {
+            font-size: 0.95rem;
+            color: #999;
+            text-decoration: line-through;
+            font-weight: 500;
+            margin-top: 0.15rem;
+        }
+        .discount-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #d32f2f 0%, #ff5252 100%);
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 0.2rem 0.55rem;
+            border-radius: 50px;
+            margin-left: 0.35rem;
+            margin-bottom: 0.5rem;
+            box-shadow: 0 2px 6px rgba(211, 47, 47, 0.35);
+            animation: pulseBadge 1.8s infinite;
+        }
+        @keyframes pulseBadge {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+        }
+
+        /* ============================================================
+           PROMOCIÓN ARREGLOS FÚNEBRES — sección + flyer flotante
+           Paleta sobria (ciruela de marca, plata y lavanda suave).
+           ============================================================ */
+        .funebre-banner {
+            grid-column: 1 / -1;
+            position: relative;
+            overflow: hidden;
+            border-radius: 18px;
+            padding: 1.05rem 1.3rem;
+            margin-top: 0.75rem;
+            background: linear-gradient(120deg, #2b2330 0%, #40353E 45%, #5e4f63 75%, #2f2734 100%);
+            color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.9rem;
+            box-shadow: 0 10px 30px rgba(64, 53, 62, 0.28);
+            border: 2px solid rgba(220, 220, 230, 0.55);
+            scroll-margin-top: 110px;
+            contain: paint;
+        }
+        .funebre-banner::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 40%; height: 100%;
+            background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.16), transparent);
+            transform: translate3d(-160%, 0, 0) skewX(-18deg);
+            animation: semanaSheen 7s ease-in-out infinite;
+            pointer-events: none;
+        }
+        .funebre-banner-text { position: relative; z-index: 2; min-width: 240px; }
+        .funebre-banner-text h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.45rem;
+            line-height: 1.15;
+            margin: 0 0 0.25rem;
+            color: #fff;
+        }
+        .funebre-banner-text h2 .funebre-silver { color: #e3dce8; font-style: italic; }
+        .funebre-banner-text p {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.86rem;
+            opacity: 0.92;
+        }
+        .funebre-banner-tag {
+            position: relative;
+            z-index: 2;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(227, 220, 232, 0.6);
+            border-radius: 50px;
+            padding: 0.5rem 1rem;
+            white-space: nowrap;
+        }
+        .product-card.funebre-promo-card {
+            position: relative;
+            border: 3px solid transparent;
+            background-image: linear-gradient(#fff, #fff),
+                              linear-gradient(135deg, #c9c3cf 0%, #8C748B 45%, #e8e3ec 70%, #a99bb0 100%);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+            box-shadow: 0 10px 28px rgba(64, 53, 62, 0.18);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: visible !important;
+        }
+        .product-card.funebre-promo-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 38px rgba(64, 53, 62, 0.28);
+        }
+        .funebre-ribbon {
+            position: absolute;
+            top: 14px;
+            left: -8px;
+            background: linear-gradient(135deg, #2b2330 0%, #40353E 55%, #6b5a6e 100%);
+            color: #fff;
+            padding: 0.4rem 0.95rem 0.4rem 1.15rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 1.2px;
+            white-space: nowrap;
+            box-shadow: 0 4px 14px rgba(43, 35, 48, 0.45);
+            z-index: 10;
+            clip-path: polygon(0 0, 100% 0, 93% 50%, 100% 100%, 0 100%, 7% 50%);
+        }
+        .funebre-ribbon span { color: #e3dce8; }
+        .funebre-savings {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            background: linear-gradient(140deg, #ffffff 0%, #e3dce8 55%, #bfb3c6 100%);
+            color: #40353E;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            font-size: 0.95rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            border: 2px solid #fff;
+            box-shadow: 0 5px 16px rgba(64, 53, 62, 0.35);
+            z-index: 10;
+        }
+        .funebre-savings small {
+            font-size: 0.44rem;
+            letter-spacing: 0.6px;
+            font-weight: 700;
+            margin-top: 2px;
+            opacity: 0.85;
+        }
+        .product-card.funebre-promo-card .product-price { color: #40353E; font-weight: 800; }
+
+        /* --- Flyer flotante (se cierra solo a los 5 s) --- */
+        .ff-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            background: rgba(20, 16, 22, 0.55);
+            opacity: 0;
+            transition: opacity 0.35s ease;
+        }
+        .ff-overlay.ff-show { opacity: 1; }
+        .ff-card {
+            position: relative;
+            width: min(560px, 100%);
+            max-height: calc(100vh - 32px);
+            overflow: auto;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+            transform: translateY(18px) scale(0.97);
+            transition: transform 0.35s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+        .ff-overlay.ff-show .ff-card { transform: none; }
+        .ff-head {
+            background: linear-gradient(120deg, #2b2330 0%, #40353E 50%, #5e4f63 100%);
+            color: #fff;
+            text-align: center;
+            padding: 1.1rem 2.6rem 0.95rem;
+        }
+        .ff-kicker {
+            display: inline-block;
+            font-size: 0.66rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #e3dce8;
+            border: 1px solid rgba(227, 220, 232, 0.55);
+            border-radius: 50px;
+            padding: 0.2rem 0.75rem;
+            margin-bottom: 0.45rem;
+        }
+        .ff-head h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.5rem;
+            line-height: 1.15;
+            margin: 0 0 0.2rem;
+            color: #fff;
+        }
+        .ff-head p { margin: 0; font-size: 0.82rem; opacity: 0.9; }
+        .ff-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, 0.18);
+            color: #fff;
+            font-size: 1.4rem;
+            line-height: 1;
+            cursor: pointer;
+            z-index: 2;
+        }
+        .ff-close:hover { background: rgba(255, 255, 255, 0.3); }
+        .ff-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+            padding: 1rem;
+        }
+        .ff-item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: #40353E;
+            border: 1px solid #ebe6ee;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #fff;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .ff-item:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(64, 53, 62, 0.15); }
+        .ff-item img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            display: block;
+            background: #f5f3f6;
+        }
+        .ff-off {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            background: #40353E;
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 0.15rem 0.45rem;
+            border-radius: 50px;
+        }
+        .ff-info { padding: 0.5rem 0.55rem 0.6rem; text-align: center; }
+        .ff-name {
+            font-size: 0.72rem;
+            font-weight: 600;
+            line-height: 1.25;
+            margin: 0 0 0.3rem;
+            min-height: 2.5em;
+        }
+        .ff-old { display: block; font-size: 0.74rem; color: #999; text-decoration: line-through; }
+        .ff-new { display: block; font-size: 1.02rem; font-weight: 800; color: #40353E; }
+        .ff-foot { padding: 0 1rem 1rem; text-align: center; }
+        .ff-cta {
+            display: inline-block;
+            background: linear-gradient(135deg, #40353E 0%, #8C748B 100%);
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.88rem;
+            padding: 0.65rem 1.5rem;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+        }
+        .ff-progress { height: 4px; background: #ebe6ee; }
+        .ff-progress span {
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, #8C748B, #40353E);
+            transform-origin: left center;
+        }
+        .ff-overlay.ff-run .ff-progress span { animation: ffCountdown 5s linear forwards; }
+        @keyframes ffCountdown { from { transform: scaleX(1); } to { transform: scaleX(0); } }
+
+        @media (max-width: 480px) {
+            .funebre-banner { padding: 0.9rem 1rem; justify-content: center; text-align: center; }
+            .funebre-banner-text { min-width: 0; }
+            .funebre-banner-text h2 { font-size: 1.15rem; }
+            .funebre-banner-text p { font-size: 0.78rem; }
+            .funebre-savings { width: 46px; height: 46px; font-size: 0.82rem; }
+            .ff-head { padding: 0.95rem 2.4rem 0.8rem; }
+            .ff-head h3 { font-size: 1.2rem; }
+            .ff-items { gap: 0.45rem; padding: 0.75rem; }
+            .ff-name { font-size: 0.64rem; }
+            .ff-new { font-size: 0.88rem; }
+            .ff-old { font-size: 0.66rem; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .funebre-banner::after { animation: none !important; }
+            .ff-overlay, .ff-card { transition: none; }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section class="catalog-hero">
+        <div class="container">
+            <h1>Catálogo Floral Santiago</h1>
+            <p>Descubre nuestros ramos, arreglos, canastas y detalles florales disponibles en Santiago</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="catalog-filters">
+        <div class="container">
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" class="search-input" id="search-input" placeholder="Buscar por nombre, código (001, 002...), rosas, girasoles...">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="m21 21-4.35-4.35"/>
+                </svg>
+                <button class="search-clear" id="search-clear">&times;</button>
+            </div>
+            <div class="filters-container">
+                <span class="filter-label">Filtrar por:</span>
+                <button class="filter-btn active" data-filter="todos" data-code="000"><span class="filter-code">[000]</span> Todos</button>
+                
+                <button class="filter-btn" data-filter="ramos" data-code="100"><span class="filter-code">[100]</span> Ramos</button>
+                
+                
+                <button class="filter-btn" data-filter="canastas" data-code="400"><span class="filter-code">[400]</span> Canastas</button>
+                <button class="filter-btn" data-filter="funebres" data-code="500"><span class="filter-code">[500]</span> Fúnebres</button>
+                <button class="filter-btn" data-filter="especiales" data-code="600"><span class="filter-code">[600]</span> Especiales</button>
+                <button class="filter-btn" data-filter="premium" data-code="700"><span class="filter-code">[700]</span> Premium</button>
+                <button class="filter-btn" data-filter="tulipanes" data-code="800"><span class="filter-code">[800]</span> Tulipanes</button>
+                <button class="filter-btn" data-filter="girasoles" data-code="810"><span class="filter-code">[810]</span> Girasoles</button>
+                <button class="filter-btn" data-filter="rosas" data-code="820"><span class="filter-code">[820]</span> Rosas</button>
+                <button class="filter-btn" data-filter="precio-bajo" data-code="900"><span class="filter-code">[900]</span> Hasta $30.000</button>
+                <button class="filter-btn" data-filter="precio-medio" data-code="910"><span class="filter-code">[910]</span> $30.000 - $80.000</button>
+                <button class="filter-btn" data-filter="precio-alto" data-code="920"><span class="filter-code">[920]</span> Más de $80.000</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Counter -->
+    <div class="results-counter">
+        <div class="container">
+            Mostrando <strong id="results-count">119</strong> productos
+        </div>
+    </div>
+
+    <!-- Products Grid -->
+    <section class="catalog-section">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- Los productos se generarán aquí -->
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="empty-state">
+                <h3>No se encontraron productos</h3>
+                <p>Prueba otra categoría o cambia tu búsqueda para ver más arreglos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">×</button>
+            <img src="" alt="" class="lightbox-image" id="lightbox-image">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-price"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scroll-top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- WhatsApp Button -->
+    <div id="whatsapp-button-container"></div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/product-order.js"></script>
+    <script>
+        // Datos de productos - Catálogo Floral Santiago
+const products = [
+    {
+        "id": 1,
+        "code": "001",
+        "name": "Latido Carmesí",
+        "price": 28000,
+        "image": "assets/latido-carmesi-rosa-real.webp",
+        "description": "Ramo con 4 rosas rojas.",
+        "categories": [
+            "ramos",
+            "rosas",
+            "precio-bajo"
+        ]
+    },
+    {
+        "id": 2,
+        "code": "002",
+        "name": "Encuentro de Luz",
+        "price": 31000,
+        "image": "assets/encuentro-de-luz-rosa-real.webp",
+        "description": "Ramo que combina rosas, girasol y astromelias.",
+        "categories": [
+            "ramos",
+            "rosas",
+            "girasoles",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 3,
+        "code": "003",
+        "name": "Amanecer Dorado",
+        "price": 31000,
+        "image": "assets/amanecer-dorado-rosa-real.webp",
+        "description": "Ramo con 6 rosas amarillas.",
+        "categories": [
+            "ramos",
+            "rosas",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 4,
+        "code": "004",
+        "name": "Jardín de Alegría",
+        "price": 38000,
+        "image": "assets/jardin-de-alegria-rosa-real.webp",
+        "description": "Arreglo con 5 rosas y 3 girasoles.",
+        "categories": [
+            "especiales",
+            "rosas",
+            "girasoles",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 5,
+        "code": "005",
+        "name": "Fiesta de Pétalos",
+        "price": 38000,
+        "image": "assets/fiesta-de-petalos-rosa-real.webp",
+        "description": "Ramo con 6 rosas frescas y 6 gerberas.",
+        "categories": [
+            "ramos",
+            "rosas",
+            "gerberas",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 6,
+        "code": "006",
+        "name": "Caricia Rosada",
+        "price": 38000,
+        "image": "assets/caricia-rosada-rosa-real.webp",
+        "description": "Ramo romántico con 8 rosas rosadas.",
+        "categories": [
+            "ramos",
+            "rosas",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 7,
+        "code": "007",
+        "name": "Dulce Armonía",
+        "price": 44000,
+        "image": "assets/dulce-armonia-rosa-real.webp",
+        "description": "Ramo con 3 rosas rosadas y 4 gerberas surtidas.",
+        "categories": [
+            "ramos",
+            "rosas",
+            "gerberas",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 8,
+        "code": "008",
+        "name": "Beso de Chocolate",
+        "price": 44000,
+        "image": "assets/beso-de-chocolate-rosa-real.webp",
+        "description": "Ramo de rosas acompañado de chocolates Ferrero.",
+        "categories": [
+            "ramos",
+            "rosas",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 9,
+        "code": "009",
+        "name": "Atardecer de Ensueño",
+        "price": 50000,
+        "image": "assets/atardecer-de-ensueno-rosa-real.webp",
+        "description": "Ramo con 10 rosas en tonos morados y rosados.",
+        "categories": [
+            "ramos",
+            "rosas",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 10,
+        "code": "010",
+        "name": "Suspiro en Cristal",
+        "price": 56000,
+        "image": "assets/suspiro-en-cristal-rosa-real.webp",
+        "description": "Florero con 12 rosas rosadas.",
+        "categories": [
+            "especiales",
+            "rosas",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 11,
+        "code": "011",
+        "name": "Abrazo de Quince",
+        "price": 56000,
+        "image": "assets/abrazo-de-quince-rosa-real.webp",
+        "description": "Quince rosas para regalar un gesto de ternura.",
+        "categories": [
+            "ramos",
+            "rosas",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 12,
+        "code": "012",
+        "name": "Encanto Sutil",
+        "price": 56000,
+        "image": "assets/encanto-sutil-rosa-real.webp",
+        "description": "Composición floral de estilo elegante y delicado.",
+        "categories": [
+            "especiales",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 13,
+        "code": "013",
+        "name": "Brisa Floral",
+        "price": 56000,
+        "image": "assets/brisa-floral-rosa-real.webp",
+        "description": "Una composición que reúne frescura y armonía.",
+        "categories": [
+            "especiales",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 14,
+        "code": "014",
+        "name": "Sol de Pasión",
+        "price": 61000,
+        "image": "assets/sol-de-pasion-rosa-real.webp",
+        "description": "Arreglo floral de inspiración luminosa y apasionada.",
+        "categories": [
+            "especiales",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 15,
+        "code": "015",
+        "name": "Canasta Primavera",
+        "price": 63000,
+        "image": "assets/canasta-primavera-rosa-real.webp",
+        "description": "Canasta surtida con gerberas, rosas y claveles.",
+        "categories": [
+            "canastas",
+            "rosas",
+            "gerberas",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 16,
+        "code": "016",
+        "name": "Rayos de Cariño",
+        "price": 63000,
+        "image": "assets/rayos-de-carino-rosa-real.webp",
+        "description": "Ramo con 2 girasoles, 5 rosas y claveles.",
+        "categories": [
+            "ramos",
+            "rosas",
+            "girasoles",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 17,
+        "code": "017",
+        "name": "Romance de Lilium",
+        "price": 63000,
+        "image": "assets/romance-de-lilium-rosa-real.webp",
+        "description": "Ramo que reúne rosas y lilium.",
+        "categories": [
+            "ramos",
+            "rosas",
+            "lilium",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 18,
+        "code": "018",
+        "name": "Docena Radiante",
+        "price": 75000,
+        "image": "assets/docena-radiante-rosa-real.webp",
+        "description": "Doce rosas acompañadas de un girasol.",
+        "categories": [
+            "ramos",
+            "rosas",
+            "girasoles",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 19,
+        "code": "019",
+        "name": "Dulzura del Sol",
+        "price": 75000,
+        "image": "assets/dulzura-del-sol-rosa-real.webp",
+        "description": "Girasoles con chocolates y banda personalizada.",
+        "categories": [
+            "ramos",
+            "girasoles",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 20,
+        "code": "020",
+        "name": "Luz de Jardín",
+        "price": 88000,
+        "image": "assets/luz-de-jardin-rosa-real.webp",
+        "description": "Bouquet mixto con girasol y rosas.",
+        "categories": [
+            "ramos",
+            "rosas",
+            "girasoles",
+            "premium",
+            "precio-alto"
+        ]
+    },
+    {
+        "id": 21,
+        "code": "021",
+        "name": "Delicadeza Real",
+        "price": 100000,
+        "image": "assets/delicadeza-real-rosa-real.webp",
+        "description": "Arreglo floral de presentación fina y delicada.",
+        "categories": [
+            "especiales",
+            "premium",
+            "precio-alto"
+        ]
+    },
+    {
+        "id": 22,
+        "code": "022",
+        "name": "Resplandor Carmesí",
+        "price": 113000,
+        "image": "assets/resplandor-carmesi-rosa-real.webp",
+        "description": "Ramo de rosas rojas y girasoles.",
+        "categories": [
+            "ramos",
+            "rosas",
+            "girasoles",
+            "premium",
+            "precio-alto"
+        ]
+    },
+    {
+        "id": 23,
+        "code": "023",
+        "name": "Promesa de Cincuenta",
+        "price": 188000,
+        "image": "assets/promesa-de-cincuenta-rosa-real.webp",
+        "description": "Ramo de 50 rosas con gypsophila y banda personalizada.",
+        "categories": [
+            "ramos",
+            "rosas",
+            "premium",
+            "precio-alto"
+        ]
+    },
+    {
+        "id": 24,
+        "code": "024",
+        "name": "Dulce Compromiso",
+        "price": 213000,
+        "image": "assets/dulce-compromiso-rosa-real.webp",
+        "description": "Ramo para expresar una promesa de amor.",
+        "categories": [
+            "ramos",
+            "premium",
+            "precio-alto"
+        ]
+    },
+    {
+        "id": 25,
+        "code": "025",
+        "name": "Pasión y Susurros",
+        "price": 263000,
+        "image": "assets/pasion-y-susurros-rosa-real.webp",
+        "description": "Composición floral inspirada en la pasión y la elegancia.",
+        "categories": [
+            "especiales",
+            "premium",
+            "precio-alto"
+        ]
+    },
+    {
+        "id": 26,
+        "code": "026",
+        "name": "Trío de Alegría",
+        "price": 19000,
+        "image": "assets/trio-de-alegria-rosa-real.webp",
+        "description": "Ramo con 3 gerberas.",
+        "categories": [
+            "ramos",
+            "gerberas",
+            "precio-bajo"
+        ]
+    },
+    {
+        "id": 27,
+        "code": "027",
+        "name": "Tres Soles",
+        "price": 19000,
+        "image": "assets/tres-soles-rosa-real.webp",
+        "description": "Ramo con 3 girasoles.",
+        "categories": [
+            "ramos",
+            "girasoles",
+            "precio-bajo"
+        ]
+    },
+    {
+        "id": 28,
+        "code": "028",
+        "name": "Rubor de Gerberas",
+        "price": 23000,
+        "image": "assets/rubor-de-gerberas-rosa-real.webp",
+        "description": "Ramo con 3 gerberas rosadas.",
+        "categories": [
+            "ramos",
+            "gerberas",
+            "precio-bajo"
+        ]
+    },
+    {
+        "id": 29,
+        "code": "029",
+        "name": "Sol Campestre",
+        "price": 25000,
+        "image": "assets/sol-campestre-rosa-real.webp",
+        "description": "Ramo con 3 girasoles y statice.",
+        "categories": [
+            "ramos",
+            "girasoles",
+            "precio-bajo"
+        ]
+    },
+    {
+        "id": 30,
+        "code": "030",
+        "name": "Pequeño Romance",
+        "price": 25000,
+        "image": "assets/pequeno-romance-rosa-real.webp",
+        "description": "Ramo con 4 rosas rosadas y 2 gerberas.",
+        "categories": [
+            "ramos",
+            "rosas",
+            "gerberas",
+            "precio-bajo"
+        ]
+    },
+    {
+        "id": 31,
+        "code": "031",
+        "name": "Cruz de Paz",
+        "price": 113000,
+        "image": "assets/cruz-de-paz-rosa-real.webp",
+        "description": "Corona fúnebre en forma de cruz.",
+        "categories": [
+            "funebres",
+            "coronas-funebres",
+            "premium",
+            "precio-alto"
+        ]
+    },
+    {
+        "id": 32,
+        "code": "032",
+        "name": "Memoria Blanca",
+        "price": 113000,
+        "image": "assets/memoria-blanca-rosa-real.webp",
+        "description": "Corona con 24 rosas blancas y 10 lilium blancos.",
+        "categories": [
+            "funebres",
+            "coronas-funebres",
+            "rosas",
+            "lilium",
+            "premium",
+            "precio-alto"
+        ]
+    },
+    {
+        "id": 33,
+        "code": "033",
+        "name": "Canasta de Consuelo",
+        "price": 56000,
+        "image": "assets/canasta-de-consuelo-rosa-real.webp",
+        "description": "Canasta fúnebre con rosas, lilium y claveles blancos.",
+        "categories": [
+            "funebres",
+            "coronas-funebres",
+            "rosas",
+            "lilium",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 34,
+        "code": "034",
+        "name": "Recuerdo Sereno",
+        "price": 69000,
+        "image": "assets/recuerdo-sereno-rosa-real.webp",
+        "description": "Corona fúnebre con 10 rosas blancas y 8 gerberas.",
+        "categories": [
+            "funebres",
+            "coronas-funebres",
+            "rosas",
+            "gerberas",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 35,
+        "code": "035",
+        "name": "Tributo de Luz",
+        "price": 100000,
+        "image": "assets/tributo-de-luz-rosa-real.webp",
+        "description": "Corona fúnebre con 12 rosas y 8 lilium.",
+        "categories": [
+            "funebres",
+            "coronas-funebres",
+            "rosas",
+            "lilium",
+            "premium",
+            "precio-alto"
+        ]
+    },
+    {
+        "id": 36,
+        "code": "036",
+        "name": "Paz Eterna",
+        "price": 119000,
+        "image": "assets/paz-eterna-rosa-real.webp",
+        "description": "Homenaje fúnebre con 50 rosas.",
+        "categories": [
+            "funebres",
+            "coronas-funebres",
+            "rosas",
+            "premium",
+            "precio-alto"
+        ]
+    },
+    {
+        "id": 37,
+        "code": "037",
+        "name": "Legado de Amor",
+        "price": 300000,
+        "image": "assets/legado-de-amor-rosa-real.webp",
+        "description": "Corona fúnebre con rosas blancas y rojas.",
+        "categories": [
+            "funebres",
+            "coronas-funebres",
+            "rosas",
+            "premium",
+            "precio-alto"
+        ]
+    },
+    {
+        "id": 38,
+        "code": "038",
+        "name": "Homenaje del Alma",
+        "price": 81000,
+        "image": "assets/homenaje-del-alma-rosa-real.webp",
+        "description": "Homenaje floral de estilo elegante y espiritual.",
+        "categories": [
+            "funebres",
+            "coronas-funebres",
+            "premium",
+            "precio-alto"
+        ]
+    },
+    {
+        "id": 39,
+        "code": "039",
+        "name": "Amor que Permanece",
+        "price": 238000,
+        "image": "assets/amor-que-permanece-rosa-real.webp",
+        "description": "Homenaje floral para expresar amor y serenidad.",
+        "categories": [
+            "funebres",
+            "coronas-funebres",
+            "premium",
+            "precio-alto"
+        ]
+    },
+    {
+        "id": 40,
+        "code": "040",
+        "name": "Luz del Recuerdo",
+        "price": 69000,
+        "image": "assets/luz-del-recuerdo-rosa-real.webp",
+        "description": "Corona con 5 rosas y 7 lilium.",
+        "categories": [
+            "funebres",
+            "coronas-funebres",
+            "rosas",
+            "lilium",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 41,
+        "code": "041",
+        "name": "Sinfonía de Lilium",
+        "price": 44000,
+        "image": "assets/sinfonia-de-lilium-rosa-real.webp",
+        "description": "Bouquet con 10 lilium frescos.",
+        "categories": [
+            "ramos",
+            "lilium",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 42,
+        "code": "042",
+        "name": "Tulipanes de Ensueño",
+        "price": 44000,
+        "image": "assets/tulipanes-de-ensueno-rosa-real.webp",
+        "description": "Ramo con 10 tulipanes bicolor.",
+        "categories": [
+            "ramos",
+            "tulipanes",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 43,
+        "code": "043",
+        "name": "Nube de Tulipanes",
+        "price": 63000,
+        "image": "assets/nube-de-tulipanes-rosa-real.webp",
+        "description": "Ramo con 15 tulipanes blancos y gypsophila tinturada.",
+        "categories": [
+            "ramos",
+            "tulipanes",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 44,
+        "code": "044",
+        "name": "Seis Amaneceres",
+        "price": 31000,
+        "image": "assets/seis-amaneceres-rosa-real.webp",
+        "description": "Ramo con 6 girasoles naturales.",
+        "categories": [
+            "ramos",
+            "girasoles",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 45,
+        "code": "045",
+        "name": "Gran Amor Real",
+        "price": 400000,
+        "image": "assets/gran-amor-real-rosa-real.webp",
+        "description": "Ramo de 100 rosas con 50 chocolates Tiara y banda.",
+        "categories": [
+            "ramos",
+            "rosas",
+            "premium",
+            "precio-alto"
+        ]
+    },
+    {
+        "id": 46,
+        "code": "046",
+        "name": "Campo de Sol",
+        "price": 63000,
+        "image": "assets/campo-de-sol-rosa-real.webp",
+        "description": "Ramo de girasoles.",
+        "categories": [
+            "ramos",
+            "girasoles",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 47,
+        "code": "047",
+        "name": "Encuentro Primaveral",
+        "price": 63000,
+        "image": "assets/encuentro-primaveral-rosa-real.webp",
+        "description": "Arreglo de rosas y gerberas naturales.",
+        "categories": [
+            "especiales",
+            "rosas",
+            "gerberas",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 48,
+        "code": "048",
+        "name": "Canasta de Encanto",
+        "price": 113000,
+        "image": "assets/canasta-de-encanto-rosa-real.webp",
+        "description": "Canasta con gerberas y tulipanes.",
+        "categories": [
+            "canastas",
+            "gerberas",
+            "tulipanes",
+            "premium",
+            "precio-alto"
+        ]
+    },
+    {
+        "id": 49,
+        "code": "049",
+        "name": "Escalera de Pureza",
+        "price": 40000,
+        "image": "assets/escalera-de-pureza-rosa-real.webp",
+        "description": "Composición floral de siete niveles inspirada en la pureza.",
+        "categories": [
+            "especiales",
+            "precio-medio"
+        ]
+    },
+    {
+        "id": 50,
+        "code": "050",
+        "name": "Jardín Rosa Real",
+        "price": 100000,
+        "image": "assets/jardin-rosa-real-rosa-real.webp",
+        "description": "Ramo especial de flores surtidas.",
+        "categories": [
+            "ramos",
+            "premium",
+            "precio-alto"
+        ]
+    }
+];
+
+/* ============================================================
+   PROMOCIÓN DE LA SEMANA
+   Contador semanal (cierra cada domingo a las 23:59) y banner
+   de sección. Todo el movimiento se hace con transform/opacity,
+   así el navegador lo resuelve en la GPU y no re-calcula el layout.
+   ============================================================ */
+var semanaCdTimer = null;
+
+/* La promo cierra el domingo de la semana en curso a las 23:59:59
+   (hora local del visitante). Se recalcula sola: el lunes parte de nuevo,
+   así que no hay que editar fechas cada semana. */
+function semanaDeadline() {
+    var now = new Date();
+    var end = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999);
+    var dow = now.getDay(); // 0 = domingo
+    end.setDate(end.getDate() + (dow === 0 ? 0 : 7 - dow));
+    return end.getTime();
+}
+
+function semanaTimeLeft() {
+    var diff = semanaDeadline() - Date.now();
+    if (diff <= 0) return null;
+    return {
+        d: Math.floor(diff / 86400000),
+        h: Math.floor(diff / 3600000) % 24,
+        m: Math.floor(diff / 60000) % 60,
+        s: Math.floor(diff / 1000) % 60
+    };
+}
+
+function semanaCountdownHTML(compact) {
+    var labels = { d: 'días', h: 'hrs', m: 'min', s: 'seg' };
+    var units = ['d', 'h', 'm', 's'].map(function (u) {
+        return '<div class="semana-cd-unit"><span class="semana-cd-num" data-cd="' + u + '">--</span>' +
+               '<span class="semana-cd-lbl">' + labels[u] + '</span></div>';
+    }).join('');
+    return '<div class="semana-countdown' + (compact ? ' semana-cd-compact' : '') + '" data-semana-cd>' + units + '</div>';
+}
+
+function startSemanaCountdown() {
+    if (semanaCdTimer) { clearInterval(semanaCdTimer); semanaCdTimer = null; }
+    function tick() {
+        var t = semanaTimeLeft();
+        var boxes = document.querySelectorAll('[data-semana-cd]');
+        if (!boxes.length) return;
+        for (var i = 0; i < boxes.length; i++) {
+            if (!t) { boxes[i].innerHTML = '<div class="semana-cd-unit"><span class="semana-cd-num">¡HOY!</span><span class="semana-cd-lbl">último día</span></div>'; continue; }
+            var nums = boxes[i].querySelectorAll('[data-cd]');
+            for (var j = 0; j < nums.length; j++) {
+                var v = t[nums[j].getAttribute('data-cd')];
+                var txt = v < 10 ? '0' + v : '' + v;
+                if (nums[j].textContent !== txt) nums[j].textContent = txt;
+            }
+        }
+    }
+    tick();
+    semanaCdTimer = setInterval(tick, 1000);
+}
+
+function semanaBannerHTML(count) {
+    return '<div class="semana-banner">' +
+             '<div class="semana-banner-text">' +
+               '<h2><span class="semana-crown">✦</span>Promoción de la <span class="semana-gold">Semana</span></h2>' +
+               '<p>' + count + ' arreglos seleccionados con hasta <strong>22% de descuento</strong> · Solo hasta el domingo</p>' +
+             '</div>' +
+             semanaCountdownHTML(false) +
+           '</div>';
+}
+
+function semanaCardOverlay(product) {
+    if (!product.semana) return '';
+    var badge = '';
+    if (product.originalPrice && product.originalPrice > product.price) {
+        var off = Math.round((1 - product.price / product.originalPrice) * 100);
+        badge = '<div class="semana-savings">-' + off + '%<small>DCTO</small></div>';
+    }
+    return '<div class="semana-ribbon"><span class="semana-spark">✦</span> PROMO DE LA SEMANA <span class="semana-spark">✦</span></div>' + badge;
+}
+
+/* ============================================================
+   PROMOCIÓN ARREGLOS FÚNEBRES
+   Los productos con funebrePromo: true se muestran justo debajo
+   de la Promoción de la Semana, con su propio banner, y en un
+   flyer flotante que se cierra solo a los 5 segundos.
+   ============================================================ */
+function funebreBannerHTML(list) {
+    var maxOff = 0;
+    list.forEach(function (p) {
+        if (p.originalPrice > p.price) maxOff = Math.max(maxOff, Math.round((1 - p.price / p.originalPrice) * 100));
+    });
+    return '<div class="funebre-banner" id="promo-funebre">' +
+             '<div class="funebre-banner-text">' +
+               '<h2>Promoción <span class="funebre-silver">Arreglos Fúnebres</span></h2>' +
+               '<p>Expresa tus condolencias con un homenaje floral y entrega a domicilio en Santiago</p>' +
+             '</div>' +
+             '<div class="funebre-banner-tag">Hasta ' + maxOff + '% de descuento</div>' +
+           '</div>';
+}
+
+function funebreCardOverlay(product) {
+    if (!product.funebrePromo || product.semana) return '';
+    var badge = '';
+    if (product.originalPrice && product.originalPrice > product.price) {
+        var off = Math.round((1 - product.price / product.originalPrice) * 100);
+        badge = '<div class="funebre-savings">-' + off + '%<small>DCTO</small></div>';
+    }
+    return '<div class="funebre-ribbon"><span>❀</span> PROMO FÚNEBRE <span>❀</span></div>' + badge;
+}
+
+function showFunebreFlyer() {
+    var list = products.filter(function (p) { return p.funebrePromo; });
+    if (!list.length || document.getElementById('ff-overlay')) return;
+    var fmt = function (n) { return '$' + n.toLocaleString('es-CL'); };
+    var items = list.map(function (p) {
+        var off = p.originalPrice ? Math.round((1 - p.price / p.originalPrice) * 100) : 0;
+        var wa = 'https://wa.me/56949170969?text=' + encodeURIComponent('Hola, me interesa el producto ' + p.code + ': ' + p.name + ' - ' + fmt(p.price) + ' (promoción arreglos fúnebres)');
+        return '<a class="ff-item" href="' + wa + '" target="_blank" rel="noopener" onclick="gtag_report_conversion();">' +
+                 (off ? '<span class="ff-off">-' + off + '%</span>' : '') +
+                 '<img src="' + p.image + '" alt="' + p.name + '">' +
+                 '<div class="ff-info">' +
+                   '<p class="ff-name">' + p.name + '</p>' +
+                   (p.originalPrice ? '<span class="ff-old">Antes ' + fmt(p.originalPrice) + '</span>' : '') +
+                   '<span class="ff-new">' + fmt(p.price) + '</span>' +
+                 '</div>' +
+               '</a>';
+    }).join('');
+
+    var overlay = document.createElement('div');
+    overlay.className = 'ff-overlay';
+    overlay.id = 'ff-overlay';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.setAttribute('aria-label', 'Promoción de arreglos fúnebres');
+    overlay.innerHTML =
+        '<div class="ff-card">' +
+          '<button class="ff-close" type="button" aria-label="Cerrar">&times;</button>' +
+          '<div class="ff-head">' +
+            '<span class="ff-kicker">Promoción especial</span>' +
+            '<h3>Arreglos Fúnebres</h3>' +
+            '<p>Haz llegar tu cariño y respeto en los momentos de despedida</p>' +
+          '</div>' +
+          '<div class="ff-progress"><span></span></div>' +
+          '<div class="ff-items">' + items + '</div>' +
+          '<div class="ff-foot"><button class="ff-cta" type="button">Ver promoción</button></div>' +
+        '</div>';
+    document.body.appendChild(overlay);
+
+    var timer = null;
+    function close() {
+        if (!overlay.parentNode) return;
+        clearTimeout(timer);
+        overlay.classList.remove('ff-show');
+        document.removeEventListener('keydown', onKey);
+        setTimeout(function () { if (overlay.parentNode) overlay.parentNode.removeChild(overlay); }, 380);
+    }
+    function onKey(e) { if (e.key === 'Escape') close(); }
+
+    overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+    overlay.querySelector('.ff-close').addEventListener('click', close);
+    overlay.querySelector('.ff-cta').addEventListener('click', function () {
+        close();
+        var target = document.getElementById('promo-funebre');
+        if (!target) {
+            document.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.toggle('active', b.dataset.filter === 'todos'); });
+            renderProducts('todos', '');
+            target = document.getElementById('promo-funebre');
+        }
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    document.addEventListener('keydown', onKey);
+
+    requestAnimationFrame(function () {
+        requestAnimationFrame(function () { overlay.classList.add('ff-show', 'ff-run'); });
+    });
+    timer = setTimeout(close, 5000); // se cierra solo a los 5 segundos
+}
+
+        // Normalizar texto (quitar tildes y minúsculas)
+        function normalize(str) {
+            return str.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+        }
+
+        // Estado global de búsqueda y filtro
+        let currentFilter = 'todos';
+        let currentSearch = '';
+
+        // Renderizar productos
+        function renderProducts(filter, search) {
+            if (filter !== undefined) currentFilter = filter;
+            if (search !== undefined) currentSearch = search;
+
+            const grid = document.getElementById('products-grid');
+            const emptyState = document.getElementById('empty-state');
+            const resultsCount = document.getElementById('results-count');
+
+            let filteredProducts = products;
+
+            if (currentFilter !== 'todos') {
+                filteredProducts = filteredProducts.filter(product =>
+                    product.categories.includes(currentFilter)
+                );
+            }
+
+            if (currentSearch.trim() !== '') {
+                const searchNorm = normalize(currentSearch.trim());
+                const searchWords = searchNorm.split(/\s+/);
+                filteredProducts = filteredProducts.filter(product => {
+                    const text = normalize(
+                        product.code + ' ' +
+                        product.name + ' ' +
+                        product.description + ' ' +
+                        product.categories.join(' ')
+                    );
+                    return searchWords.every(word => text.includes(word));
+                });
+            }
+
+            if (filteredProducts.length === 0) {
+                grid.style.display = 'none';
+                emptyState.classList.add('active');
+                resultsCount.textContent = '0';
+                return;
+            }
+
+            grid.style.display = 'grid';
+            emptyState.classList.remove('active');
+            resultsCount.textContent = filteredProducts.length;
+
+            const semanaProducts = filteredProducts.filter(p => p.semana);
+            const funebrePromo = filteredProducts.filter(p => p.funebrePromo);
+            filteredProducts = orderProductsByPriceRows(filteredProducts);
+
+            const semanaBanner = semanaProducts.length ? semanaBannerHTML(semanaProducts.length) : '';
+            const funebreBanner = funebrePromo.length ? funebreBannerHTML(funebrePromo) : '';
+            grid.innerHTML = semanaBanner + filteredProducts.map((product, idx) => {
+                const hasVariations = Array.isArray(product.variations) && product.variations.length > 1;
+                const imagesHtml = hasVariations
+                    ? product.variations.map((src, i) => `<img src="${src}" alt="${product.name} variante ${i+1}" class="product-image carousel-img${i===0?' active':''}" data-index="${i}" loading="lazy">`).join('')
+                    : `<img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">`;
+                const dotsHtml = hasVariations
+                    ? `<div class="carousel-dots">${product.variations.map((_, i) => `<span class="carousel-dot${i===0?' active':''}" data-index="${i}"></span>`).join('')}</div>
+                       <span class="carousel-counter"><span class="carousel-current">1</span>/${product.variations.length}</span>`
+                    : '';
+                const lightboxHandler = hasVariations
+                    ? `openCarouselLightbox('${product.code}', '${product.name.replace(/'/g, "\\'")}', '${formatPrice(product.price)}')`
+                    : `openLightbox('${product.image}', '${product.name.replace(/'/g, "\\'")}', '${formatPrice(product.price)}')`;
+                return `${idx === semanaProducts.length ? funebreBanner : ''}
+                <div class="product-card ${product.semana ? 'semana-card' : (product.peluche ? 'peluche-card' : (product.funebrePromo ? 'funebre-promo-card' : (product.promo ? 'promo-card' : '')))}" data-categories="${product.categories.join(' ')}" data-code="${product.code}">
+                    ${semanaCardOverlay(product)}
+                    ${funebreCardOverlay(product)}
+                    ${product.peluche ? `<div class="peluche-ribbon">🧸 PELUCHE</div>` : ''}
+                    ${product.promo && !product.semana ? `
+                        <div class="promo-ribbon">
+                            <span class="promo-spark">✦</span> OFERTA <span class="promo-spark">✦</span>
+                        </div>
+                        <div class="promo-savings">-${Math.round((1 - product.price/product.originalPrice)*100)}%</div>
+                    ` : ''}
+                    <div class="product-image-container ${hasVariations ? 'has-carousel' : ''}" data-code="${product.code}" onclick="${lightboxHandler}">
+                        ${imagesHtml}
+                        ${dotsHtml}
+                        <div class="zoom-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                                <line x1="11" y1="8" x2="11" y2="14"/>
+                                <line x1="8" y1="11" x2="14" y2="11"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-code">Cód. ${product.code}</span>
+                        ${product.originalPrice && !product.semana && !product.funebrePromo ? `<span class="discount-badge">¡OFERTA!</span>` : ''}
+                        <h3 class="product-name">${product.name}</h3>
+                        <div class="product-description">${product.description}</div>
+                        <div class="product-footer">
+                            <div>
+                                ${product.peluche ? `
+                                    <span class="peluche-note">Precio a consultar</span>
+                                    <span class="peluche-quote">Cotizar peluche</span>
+                                ` : `
+                                    <span class="price-label">Desde</span>
+                                    ${product.originalPrice ? `<div class="original-price">${formatPrice(product.originalPrice)}</div>` : ''}
+                                    <div class="product-price">${formatPrice(product.price)}</div>
+                                `}
+                            </div>
+                            <a href="${product.peluche ? `https://wa.me/56949170969?text=${encodeURIComponent('Hola, quiero cotizar el peluche ' + product.code + ': ' + product.name)}` : `https://wa.me/56949170969?text=Hola,%20me%20interesa%20el%20producto%20${product.code}:%20${encodeURIComponent(product.name)}%20-%20${formatPrice(product.price)}`}"
+                               class="btn-order"
+                               target="_blank"
+                               onclick="gtag_report_conversion();">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                                ${product.peluche ? 'Cotizar' : 'Pedir Ahora'}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            }).join('');
+
+            if (semanaProducts.length) startSemanaCountdown();
+            initCarousels();
+        }
+
+        // Carousel para productos con variaciones
+        let carouselTimers = [];
+        function initCarousels() {
+            carouselTimers.forEach(t => clearInterval(t));
+            carouselTimers = [];
+            document.querySelectorAll('.product-image-container.has-carousel').forEach(carousel => {
+                const imgs = carousel.querySelectorAll('.carousel-img');
+                const dots = carousel.querySelectorAll('.carousel-dot');
+                const counter = carousel.querySelector('.carousel-current');
+                if (imgs.length <= 1) return;
+                let current = 0;
+                const setActive = (idx) => {
+                    imgs[current].classList.remove('active');
+                    if (dots[current]) dots[current].classList.remove('active');
+                    current = (idx + imgs.length) % imgs.length;
+                    imgs[current].classList.add('active');
+                    if (dots[current]) dots[current].classList.add('active');
+                    if (counter) counter.textContent = current + 1;
+                };
+                const timer = setInterval(() => setActive(current + 1), 3000);
+                carouselTimers.push(timer);
+                dots.forEach((dot, i) => {
+                    dot.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        setActive(i);
+                    });
+                });
+            });
+        }
+
+        function openCarouselLightbox(code, name, price) {
+            const card = document.querySelector(`.product-image-container.has-carousel[data-code="${code}"]`);
+            if (!card) return;
+            const activeImg = card.querySelector('.carousel-img.active') || card.querySelector('.carousel-img');
+            if (activeImg) openLightbox(activeImg.src, name, price);
+        }
+
+        function formatPrice(price) {
+            if (price === 0) return 'Cotización';
+            return '$' + price.toLocaleString('es-CL');
+        }
+
+        // Filtros
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                renderProducts(this.dataset.filter);
+                window.scrollTo({ top: 400, behavior: 'smooth' });
+            });
+        });
+
+        // Búsqueda
+        const searchInput = document.getElementById('search-input');
+        const searchClear = document.getElementById('search-clear');
+        let searchTimeout;
+        searchInput.addEventListener('input', function() {
+            clearTimeout(searchTimeout);
+            const val = this.value;
+            searchClear.classList.toggle('visible', val.length > 0);
+            searchTimeout = setTimeout(() => {
+                renderProducts(undefined, val);
+            }, 250);
+        });
+        searchClear.addEventListener('click', function() {
+            searchInput.value = '';
+            searchClear.classList.remove('visible');
+            renderProducts(undefined, '');
+            searchInput.focus();
+        });
+
+        // Lightbox
+        function openLightbox(image, name, price) {
+            const lightbox = document.getElementById('lightbox');
+            document.getElementById('lightbox-image').src = image;
+            document.getElementById('lightbox-image').alt = name;
+            document.getElementById('lightbox-title').textContent = name;
+            document.getElementById('lightbox-price').textContent = price;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+
+        // Scroll to top
+        const scrollTop = document.getElementById('scroll-top');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 500) scrollTop.classList.add('visible');
+            else scrollTop.classList.remove('visible');
+        });
+        scrollTop.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Inicializar
+        renderProducts();
+
+        // Flyer flotante Promoción Arreglos Fúnebres (se cierra solo a los 5 s)
+        window.addEventListener('load', function () { setTimeout(showFunebreFlyer, 700); });
+    </script>
+</body>
+</html>

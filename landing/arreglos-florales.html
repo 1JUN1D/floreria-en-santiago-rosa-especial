@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En Santiago ofrecemos arreglos florales elegantes, rosas de excelente calidad y opciones para regalar. Servicio disponible las 24 horas. Comunícate vía WhatsApp.">
+    <meta name="keywords" content="floristeria santiago, bouquet de flores, arreglo de flores, flores de regalo, flores 24 horas, arreglos florales elegantes, flores santiago, flores frescas santiago">
+    <meta property="og:title" content="Arreglos Florales Elegantes en Santiago">
+    <meta property="og:description" content="Descubre nuestros hermosos arreglos de flores frescas en Santiago. Bouquets elegantes, flores de regalo y entrega el mismo día.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=1200&q=80">
+    <meta property="og:url" content="https://rosareal.dondeseria.com/landing/arreglos-florales">
+    <meta property="og:type" content="website">
+    <meta name="language" content="es-CL">
+    <meta name="geo.placename" content="Santiago, Región Metropolitana">
+    <meta name="geo.region" content="CL-RM">
+    <link rel="canonical" href="https://rosareal.dondeseria.com/landing/arreglos-florales">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18163228199"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18163228199');
+</script>
+<!-- Event snippet for conversion -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') { window.location = url; }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-18163228199/iTZDCLCAzsocEKe889RD',
+        'value': 1.0,
+        'currency': 'CLP',
+        'event_callback': callback
+    });
+    return false;
+  }
+</script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/landing.css">
+
+        <link rel="icon" type="image/png" href="../assets/logo.webp">
+
+
+    <title>Arreglos Florales Elegantes en Santiago | Flores Frescas</title>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../assets/logo.webp" alt="Florería Rosa Real en Santiago">
+            </div>
+            <nav class="nav">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#productos" class="nav-link">Productos</a>
+            </nav>
+            <button class="cta-btn" onclick="contactWA(); return false;">Contactar por WhatsApp</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Arreglos Florales Elegantes en Santiago</h1>
+            <p class="hero-subtitle">Diseños con flores frescas y entrega coordinada a domicilio en Santiago</p>
+            <button class="hero-cta" onclick="contactWA(); return false;">
+                <span>💬 Pedir Ahora por WhatsApp</span>
+            </button>
+        </div>
+    </section>
+
+
+
+    <!-- Catálogo Completo -->
+    <section class="catalog-filters" id="productos">
+        <div class="container">
+            <div class="search-container">
+                <input type="text" class="search-input" id="search-input" placeholder="Buscar ramos, rosas, girasoles, gerberas...">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="m21 21-4.35-4.35"/>
+                </svg>
+                <button class="search-clear" id="search-clear">&times;</button>
+            </div>
+            <div class="filters-container">
+                <span class="filter-label">Filtrar:</span>
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="ramos">Ramos</button>
+                <button class="filter-btn" data-filter="centros-mesa">Centros de Mesa</button>
+                <button class="filter-btn" data-filter="pedestales">Pedestales</button>
+                
+                
+                <button class="filter-btn" data-filter="coronas-funebres">Coronas Fúnebres</button>
+                <button class="filter-btn" data-filter="especiales">Especiales</button>
+                <button class="filter-btn" data-filter="decoracion">Decoración</button>
+                <button class="filter-btn" data-filter="premium">Premium</button>
+                <button class="filter-btn" data-filter="precio-bajo">Hasta $30.000</button>
+                <button class="filter-btn" data-filter="precio-medio">$30.000 - $80.000</button>
+                <button class="filter-btn" data-filter="precio-alto">Más de $80.000</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="results-counter">
+        <div class="container">
+            Mostrando <strong id="results-count">0</strong> productos
+        </div>
+    </div>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="products-container"></div>
+            <div class="empty-state" id="empty-state">
+                <h3>No se encontraron productos</h3>
+                <p>Cambia la categoría o escribe otra palabra para ver opciones</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CTA Final -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Sorprende Hoy, Sonríen Mañana</h2>
+            <p>Encarga tus arreglos florales y consulta el despacho diario en Santiago.</p>
+            <button class="cta-button-large" onclick="orderWA(); return false;">
+                📞 WhatsApp: +56 9 4917 0969
+            </button>
+            <p class="cta-subtitle">Escríbenos para recibir atención y coordinar tu pedido</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <p>Rosa Real: florería en Santiago de Chile, Región Metropolitana</p>
+                <p>Conversa por WhatsApp: <a href="https://wa.me/56949170969">+56 9 4917 0969</a></p>
+                <p>Consulta la cobertura de entrega para tu dirección</p>
+            </div>
+            <p class="footer-copyright">&copy; Rosa Real 2026. Reservados todos los derechos.</p>
+        </div>
+    </footer>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Florería Rosa Real en Santiago",
+        "image": "https://rosareal.dondeseria.com/assets/logo.webp",
+        "description": "Florería especializada en arreglos florales elegantes con despacho a domicilio en Santiago, Región Metropolitana.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santiago",
+            "addressRegion": "Región Metropolitana",
+            "addressCountry": "CL"
+        },
+        "telephone": "+56949170969",
+        "url": "https://rosareal.dondeseria.com",
+        "priceRange": "$$",
+        "sameAs": "https://wa.me/56949170969"
+    }
+    </script>
+
+    <!-- JS -->
+    <script src="../js/product-order.js"></script>
+    <script src="../js/landing.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        LANDING_PRIORITY_TAG = 'ramos';
+        initCatalog();
+    });
+    </script>
+</body>
+</html>
